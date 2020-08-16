@@ -1,22 +1,23 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #define _CRT_SECURE_NO_WARNINGS
 
 int main()
 {
-    float a, b, d;
-    scanf("%f %f", &a, &b);
-    d = a - b;
-    if (d < 0)
+    int a, b, c, d;
+    scanf("%d %d", &a, &b);
+    c = a;
+    d = b;
+    for (; a <= 999; a = a + c)
     {
-        d = d * -1;
-        printf("%.2f", d);
-    }
-    else
-    {
-        printf("%.2f", d);
+        printf("%d", a);
+        printf("\n");
     }
 
+    for (; b <= 999; b = b + d)
+    {
+        printf("%d", b);
+        printf("\n");
+    }
     return 0;
 }
