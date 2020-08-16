@@ -5,17 +5,18 @@
 
 int main()
 {
-    double R, A;
-    scanf("%lf", &R);
-    double PI = 22 / 7.0;
-    A = PI * R * R;
-    if (R >= 0)
+    float a, b, d;
+    scanf("%f %f", &a, &b);
+    d = a - b;
+    if (d < 0)
     {
-        printf("%lf", A);
+        d = d * -1;
+        printf("%.2f", d);
     }
     else
     {
-        printf("Error");
+        printf("%.2f", d);
     }
+
     return 0;
 }
